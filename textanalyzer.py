@@ -1,5 +1,5 @@
 import streamlit as st
-import openai
+import pandas as pd
 
 st.title("Ticket Classifier")
 st.info("Group tickets based on their description")
