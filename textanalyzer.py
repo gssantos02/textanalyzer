@@ -21,7 +21,7 @@ if submit is not None:
     prompt,
     candidate_labels=['access','hardware','software'],
   )
-  res = res['labels'][0]
-  st.write(res)
+  tag = res['labels'][0]
+  st.write(tag)
 
 
