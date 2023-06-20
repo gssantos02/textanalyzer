@@ -1,3 +1,7 @@
+pip install streamlit
+pip install openai
+pip install pandas
+
 import streamlit as st
 import pandas as pd
 
