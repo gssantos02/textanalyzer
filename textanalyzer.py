@@ -10,4 +10,4 @@ with st.form("Uplod File"):
   upload = st.form_submit_button("Upload")
   if submit:
     df = pd.read_csv(uploaded_file)
-    st.write(df.head(5))
+    #st.write(df.head(5))
