@@ -1,0 +1,7 @@
+pandas
+streamlit
+openai
+transformers
+numpy
+requests
+regex
