@@ -5,9 +5,8 @@ st.title("Ticket Classifier")
 
 st.header("Upload Ticket Data")
 
-with st.form("Uplod File"):
-  uploaded_file = st.file_uploader("Upload a .csv file")
-  upload = st.form_submit_button("Upload")
-  if upload:
-    df = pd.read_csv(uploaded_file)
-    #st.write(df.head(5))
+uploaded_file = st.file_uploader("Upload a .csv file")
+if uploaded_file is not None:
+  df = pd.read_csv(uploaded_file)
+  df = df.head(5)
+st.write(df)
