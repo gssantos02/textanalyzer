@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 
-classifier = pipeline("zero-shot-classification")
+
 
 st.title("Ticket Classifier")
 st.header("Upload Ticket Data")
@@ -17,6 +17,7 @@ with st.form("Sample Description"):
    prompt = st.text_area("Prompt", "Input sample ticket description")
    submit = st.form_submit_button("Submit")
 if submit is not None:
+  classifier = pipeline("zero-shot-classification")
   res = classifier(
     prompt,
     candidate_labels=['access','hardware','software'],
