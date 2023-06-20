@@ -16,6 +16,8 @@ if uploaded_file is not None:
 with st.form("Sample Description"):
    prompt = st.text_area("Prompt", "Input sample ticket description")
    submit = st.form_submit_button("Submit")
+  if submit:
+    st.write("Functioning correctly")
 #if submit is not None:
   #classifier = pipeline("zero-shot-classification")
   #res = classifier(
