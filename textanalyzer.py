@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 
-classifier = pipeline("sentiment-analysis")
+classifier = pipeline("zero-shot-classification")
 
 st.title("Ticket Classifier")
 st.header("Upload Ticket Data")
