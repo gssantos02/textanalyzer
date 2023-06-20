@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 
-#@st.cache(allow_output_mutation=True)
+##@st.cache(allow_output_mutation=True)
 #def load_model(model_name):
   #classifier = pipeline(model_name)
   #return(classifier)
