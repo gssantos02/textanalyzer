@@ -16,13 +16,13 @@ if uploaded_file is not None:
 with st.form("Sample Description"):
    prompt = st.text_area("Prompt", "Input sample ticket description")
    submit = st.form_submit_button("Submit")
-if submit is not None:
-  classifier = pipeline("zero-shot-classification")
-  res = classifier(
-    prompt,
-    candidate_labels=['access','hardware','software'],
-  )
-  tag = res['labels'][0]
-  st.write(tag)
+#if submit is not None:
+  #classifier = pipeline("zero-shot-classification")
+  #res = classifier(
+    #prompt,
+    #candidate_labels=['access','hardware','software'],
+  #)
+  #tag = res['labels'][0]
+  #st.write(tag)
 
 
