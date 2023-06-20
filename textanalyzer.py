@@ -18,8 +18,8 @@ if uploaded_file is not None:
   st.write(df)
   
 with st.form("Sample Description"):
-   prompt = st.text_area("Prompt", "Input sample ticket description")
-   submit = st.form_submit_button("Submit")
+   prompt = st.text_area("Prompt", "Sample Ticket Description")
+   submit = st.form_submit_button("Generate Category")
 if submit:
   st.write("Functioning correctly")
 #if submit is not None:
