@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 
-
+@st.cache(allow_output_mutation=True)
 st.title("Ticket Classifier")
 st.header("Upload Ticket Data")
 
