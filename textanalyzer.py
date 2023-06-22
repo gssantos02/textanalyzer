@@ -17,7 +17,7 @@ with st.form("Sample Description"):
    submit = st.form_submit_button("Submit")
 #if submit:
   #st.write("Functioning correctly")
-st.cache(allow_output_mutation=True)
+#st.cache(allow_output_mutation=True)
 with st.spinner('Analyzing...'):
     if submit:
       classifier = pipeline(model="facebook/bart-large-mnli")
