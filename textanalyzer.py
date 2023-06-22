@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 
-@st.cache(allow_output_mutation=True)
+
 st.title("Ticket Classifier")
 st.header("Upload Ticket Data")
 
@@ -17,6 +17,7 @@ with st.form("Sample Description"):
    submit = st.form_submit_button("Submit")
 #if submit:
   #st.write("Functioning correctly")
+@st.cache(allow_output_mutation=True)
 with st.spinner('Analyzing...'):
     if submit:
       classifier = pipeline(model="facebook/bart-large-mnli")
